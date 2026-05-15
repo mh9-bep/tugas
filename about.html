@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#76777d",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#f7f9fb",
+                    "surface": "#f7f9fb",
+                    "primary-fixed-dim": "#bec6e0",
+                    "surface-container": "#eceef0",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary": "#000000",
+                    "on-secondary-container": "#fefcff",
+                    "surface-dim": "#d8dadc",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#000000",
+                    "inverse-surface": "#2d3133",
+                    "secondary-container": "#2170e4",
+                    "on-surface": "#191c1e",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-container-low": "#f2f4f6",
+                    "background": "#f7f9fb",
+                    "on-tertiary-fixed": "#002113",
+                    "primary-container": "#131b2e",
+                    "on-primary-container": "#7c839b",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e0e3e5",
+                    "surface-tint": "#565e74",
+                    "outline-variant": "#c6c6cd",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#6ffbbe",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#002113",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "primary-fixed": "#dae2fd",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#bec6e0",
+                    "on-secondary-fixed": "#001a42",
+                    "on-secondary-fixed-variant": "#004395",
+                    "on-tertiary-container": "#009668",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-surface-variant": "#45464d",
+                    "secondary": "#0058be",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "inverse-on-surface": "#eff1f3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-mobile": "20px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "stack-lg": "32px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "label-sm": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["30px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .layered-shadow {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1), 0 20px 25px -5px rgb(0 0 0 / 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed cursor-default">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-[72px] bg-surface-container-lowest/70 backdrop-blur-[20px] border-b border-outline-variant/20 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="school">school</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">CREATIVE.</span>
+</div>
+<nav class="items-center flex gap-4 md:gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant/60 hover:text-primary transition-colors duration-200" href="index.html">HOME</a>
+<a class="font-label-sm text-label-sm text-primary border-b-2 border-primary pb-1" href="#">ABOUT ME</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/60 hover:text-primary transition-colors duration-200" href="contact.html">CONTACT ME</a>
+</nav>
+</header>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 order-2 md:order-1 space-y-stack-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed border border-secondary-fixed/50">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm">SEDANG BELAJAR &amp; BERKARYA</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">Halo! Saya Muhammad Husein Al Fatih, siswa kelas 10 SMK yang sedang mendalami dunia teknologi.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Saya adalah seorang pelajar jurusan Pengembangan Perangkat Lunak (PPLG) yang sedang antusias belajar. Fokus utama saya saat ini adalah menguasai dasar-dasar pemrograman </p>
+</div>
+<div class="md:col-span-6 order-1 md:order-2 flex justify-center md:justify-end">
+<div class="relative w-full max-w-[450px] aspect-square rounded-2xl overflow-hidden bg-primary-container flex items-center justify-center layered-shadow">
+<!-- SMK Stylized Badge/Graphic -->
+<img alt="Logo SMK 3 Banjar" class="w-4/5 h-4/5 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlxqWviqubq9GipoTRk7t7jhvahOph1gH806fgXjkc0OAhzFK5rffiZp9NHHQdJerYT_VBxlYvuVzvLWSQk6WUG4oPltqXCbOG5uXHg40Ar4k4Z3E4g1sNhsFNBLRz9f25c5BJCrzY3xgNSqDqlfQFt-0WaqEslPy-8roMUyV5laGReusU2kaVKaweDvP8sg9B-e9ECERKL0gQGyJ1kdvWeckJhpf7Hf0wnMIoTLipBGls_Fk4Voun_53H5tsTcUwvbA_WiBCY3JZu"/>
+<div class="absolute bottom-4 right-4 bg-secondary text-on-secondary px-4 py-2 rounded-lg font-label-sm text-xs">PELAJAR AKTIF</div>
+</div>
+</div>
+</section>
+<!-- Skills & Services Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end gap-stack-lg mb-section-gap">
+<div class="max-w-2xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md">Keahlian Pelajar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sebagai siswa kelas 10 , saya baru saja memulai langkah awal saya di dunia teknologi ini.  </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- UI/UX Design -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 group">
+<div class="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center mb-stack-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary" data-icon="design_services">design_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Dasar UI/UX</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Saya ingi sekali mencoba mengeksplorasi prinsip-prinsip awal desain antarmuka dan mencoba memahami bagaimana pengalaman pengguna dibentuk dari sudut pandang seorang pemula.</p>
+</div>
+<!-- Branding -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 group">
+<div class="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center mb-stack-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary" data-icon="palette">palette</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Visual &amp; Logo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mengenal dasar-dasar estetika visual, seperti perpaduan warna dan bentuk sederhana, sebagai fondasi untuk memahami bahasa visual yang lebih luas.</p>
+</div>
+<!-- Web Development -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl border border-outline-variant/30 hover:border-secondary transition-all duration-300 group">
+<div class="w-12 h-12 bg-secondary-fixed/20 rounded-lg flex items-center justify-center mb-stack-lg group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary" data-icon="terminal">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Web Fundamental</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Langkah pertama saya dalam pemrograman dengan mempelajari struktur dasar HTML dan CSS untuk mencoba membuat tampilan web yang sangat sederhana.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brief Stats/Intro Detail -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div class="space-y-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary">Filosofi Belajar</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Saya adalah seorang pelajar yang mangambil jurusan Pengembangan Perangkat Lunak (PPLG). Fokus utama saya pada saat ini adalah menguasai dasar-dasar pemrograman </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center justify-center gap-stack-md text-center py-stack-lg bg-primary-container">
+<nav class="flex gap-stack-md">
+<a class="font-label-sm text-label-sm text-on-primary-container/60 hover:text-on-primary-container transition-colors" href="index.html">HOME</a>
+<a class="font-label-sm text-label-sm text-on-primary-container font-bold" href="#">ABOUT ME</a>
+<a class="font-label-sm text-label-sm text-on-primary-container/60 hover:text-on-primary-container transition-colors" href="contact.html">CONTACT ME</a>
+</nav>
+<div class="mt-stack-md border-t border-on-primary-container/10 pt-stack-md w-full max-w-container-max">
+</div>
+</footer>
+</body></html>
